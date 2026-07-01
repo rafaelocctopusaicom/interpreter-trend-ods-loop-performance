@@ -1,46 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>br.com.embraer.ahead</groupId>
         <artifactId>interpreter-parent</artifactId>
         <version>3.1.2</version>
     </parent>
-
     <artifactId>interpreter-trend-ods-loop-performance</artifactId>
     <version>3.1.2</version>
     <packaging>jar</packaging>
-
     <name>interpreter-trend-ods-loop-performance</name>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <sonar.projectKey>ahead-interpreter-trend-ods-loop-performance</sonar.projectKey>
-        <sonar.projectName>ahead-interpreter-trend-ods-loop-performance</sonar.projectName>
-        <sonar.language>java</sonar.language>
     </properties>
-
     <dependencies>
-        <dependency>
-            <groupId>br.com.embraer.ahead</groupId>
-            <artifactId>interpreter-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_2.12</artifactId>
-            <version>${spark.version}</version>
-            <scope>provided</scope>
-        </dependency>
+        <dependency><groupId>br.com.embraer.ahead</groupId><artifactId>interpreter-api</artifactId></dependency>
+        <dependency><groupId>org.apache.spark</groupId><artifactId>spark-sql_2.12</artifactId><version>${spark.version}</version><scope>provided</scope></dependency>
     </dependencies>
-
-    <build>
-        <finalName>interpreter-trend-ods-loop-performance</finalName>
-    </build>
-
+    <build><finalName>interpreter-trend-ods-loop-performance</finalName></build>
 </project>
